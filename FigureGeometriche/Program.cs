@@ -31,6 +31,11 @@
             };
 
             Console.WriteLine(r.ToString());
+
+            Triangolo t = new Triangolo(1, 2, 3);
+
+            Console.WriteLine(t);
+
         }
     }
 }

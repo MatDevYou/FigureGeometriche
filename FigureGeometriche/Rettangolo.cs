@@ -56,7 +56,7 @@ namespace FigureGeometriche
                 ;
         }
 
-        //overriding , sovrascivi metodi concaratteristiche precise
+        //overriding , sovrascivi metodi con caratteristiche precise
         public override string ToString()
         {
             return $"" +
