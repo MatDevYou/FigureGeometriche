@@ -22,6 +22,13 @@ namespace FigureGeometriche
             Lato2 = lato2;
             Lato3 = lato3;
         }
+        public Triangolo(Punto punto1, Punto punto2, Punto punto3)
+        {
+            Lato1 = punto1.Distanza(punto2);
+            Lato2 = punto2.Distanza(punto3);
+            Lato3 = punto3.Distanza(punto1);
+        }
+
 
         public Triangolo() { }
 

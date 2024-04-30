@@ -1,4 +1,6 @@
-﻿namespace FigureGeometriche
+﻿using System.Security.Cryptography;
+
+namespace FigureGeometriche
 {
     internal class Program
     {
@@ -36,6 +38,20 @@
 
             Console.WriteLine(t);
 
+            Punto p = new Punto("P", 2,3);
+            Console.WriteLine(p);
+
+            Punto q1 = new Punto("Q", -2, -3);
+            Console.WriteLine(q1);
+
+            Punto r1 = new Punto(1.5, -2.5);
+            Console.WriteLine(r1.Stampa());
+
+            Console.WriteLine($"PQ = {p.Distanza(q1)}");
+            Console.WriteLine($"PQ = {q1.Distanza(p)}");
+
+            Triangolo t1 = new Triangolo(p,q1,r1);
+            Console.WriteLine(r1);
         }
     }
 }
