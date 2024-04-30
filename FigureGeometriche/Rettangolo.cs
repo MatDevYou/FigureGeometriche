@@ -12,6 +12,7 @@ namespace FigureGeometriche
         private double _latoBase;
         private double _altezza;
 
+        //proprieta
         public double Base 
         {
             get { return _latoBase; }
